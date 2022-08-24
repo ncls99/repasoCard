@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+--color1: hsl(225, 100%, 94%);
+--color2: hsl(245, 75%, 52%);
+
+--color3: hsl(225, 100%, 98%);
+--color4: hsl(224, 23%, 55%);
+--color5: hsl(223, 47%, 23%);
+font-size: 16px;
+}
+
+main {
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-color: var(--color1);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.info_section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 5%;
+}
+
+.card {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 16px 30
+    px var(--color5);
+}
+
+.portrait_section img {
+    width: 100%;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.plan {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.paragraph {
+    text-align: center;
+    color: var(--color4);
+}
+
+.info_box{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    background-color: var(--color3);
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.info_box img {
+    grid-row: 1/3;
+}
+
+.info-text{
+    grid-column: 2/3;
+    color: var(--color4);
+}
+
+.option_change{
+    grid-row: 1/3;
+    grid-column: 3/4;
+    font-size: 12px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.submit {
+    background-color: var(--color2);
+    color: #FFFFFF;
+    border-radius: 10px ;
+    padding: 3%;
+    width: 90%;
+    border: none;
+    box-shadow: 0px 16px 10px var(--color1);
+}
+
+.option_cancel{
+    color: var(--color4);
+    font-size: 1em;
+    padding: 3%;
+}
